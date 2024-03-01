@@ -1,0 +1,35 @@
+
+/* Basic styles for calculator layout and appearance */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fafafa;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: linear-gradient(to right, black,pink);
+}
+
+#calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 200px;
+    gap: 10px;
+}
+
+#display {
+    grid-column: span 4;
+    height: 50px;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 10px;
+    font-size: 24px;
+}
+
+button {
+    height: 50px;
+    font-size: 24px;
+}
